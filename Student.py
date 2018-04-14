@@ -19,7 +19,11 @@ class Student:
     def get_school_name(self):
         return self.school_name
 
-Mark = Student("Mark")
-print(Mark)
+class HighSchoolStudent(Student):
+    
+    school_name = "Some Other School"
 
-print(Student.school_name)
+
+
+james = HighSchoolStudent("james")
+print(james.get_capitalize_name())
